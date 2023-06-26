@@ -38,47 +38,86 @@
 				
 
 				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/KevinElvert/DataEngineerProjects/blob/main/DataCleaned%20in%20Jupyther%20to%20MySQL.ipynb" target="_blank">
-								  <img src="images/fulls/Department Analysis.PNG" class="image fit thumb" />
-								  <h3><a href="https://github.com/KevinElvert/DataEngineerProjects/blob/main/DataCleaned%20in%20Jupyther%20to%20MySQL.ipynb" target="_blank">Magna sed consequat tempus</a></h3>
-								</a>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							  </article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Project</h3>
-								<p>Description</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Project</h3>
-								<p>Description</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Project</h3>
-								<p>Description</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Project</h3>
-								<p>Description</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Project</h3>
-								<p>Description</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
-
+<section id="two">
+	<h2>Recent Work</h2>
+	<div class="row">
+	  <article class="col-6 col-12-xsmall work-item">
+		<a href="https://github.com/KevinElvert/DataEngineerProjects/blob/main/DataCleaned%20in%20Jupyther%20to%20MySQL.ipynb" target="_blank">
+		  <img src="images/fulls/Department Analysis.PNG" class="image fit thumb" />
+		  <h3><a href="https://github.com/KevinElvert/DataEngineerProjects/blob/main/DataCleaned%20in%20Jupyther%20to%20MySQL.ipynb" target="_blank">Telegram Project</a></h3>
+		</a>
+		<p id="show-more-content">
+		  Data Cleaning and Analysis Project: Company Employee Dataset<br>
+		  As part of my portfolio, I have developed a comprehensive data cleaning and analysis project using Jupyter, Python, MySQL, and Power BI. The project involved working with a company employee dataset to extract valuable insights and visualize the data for meaningful interpretation.<br>
+		  The dataset consisted of employee information, including their IDs, names, birthdates, genders, races, departments, job titles, locations, hire dates, termination dates (if applicable), and office locations. With this dataset, I applied various data cleaning techniques to ensure data integrity and accuracy.<br>
+		  Using Jupyter and Python, I performed essential data cleaning operations such as handling missing values, removing duplicates, and correcting data types.
+		</p>
+		<p id="show-more-toggle" onclick="toggleShowMore()">Show more</p>
+	  </article>
+	  <article class="col-6 col-12-xsmall work-item">
+		<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+		<h3>Project</h3>
+		<p>Description</p>
+	  </article>
+	  <article class="col-6 col-12-xsmall work-item">
+		<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+		<h3>Project</h3>
+		<p>Description</p>
+	  </article>
+	  <article class="col-6 col-12-xsmall work-item">
+		<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+		<h3>Project</h3>
+		<p>Description</p>
+	  </article>
+	  <article class="col-6 col-12-xsmall work-item">
+		<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+		<h3>Project</h3>
+		<p>Description</p>
+	  </article>
+	  <article class="col-6 col-12-xsmall work-item">
+		<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+		<h3>Project</h3>
+		<p>Description</p>
+	  </article>
+	</div>
+	<ul class="actions">
+	  <li><a href="#" class="button">Full Portfolio</a></li>
+	</ul>
+  </section>
+  
+  <script>
+  function toggleShowMore() {
+	var showMoreContent = document.getElementById("show-more-content");
+	var showMoreToggle = document.getElementById("show-more-toggle");
+  
+	if (showMoreContent.classList.contains("show")) {
+	  showMoreContent.classList.remove("show");
+	  showMoreToggle.innerHTML = "Show more";
+	} else {
+	  showMoreContent.classList.add("show");
+	  showMoreToggle.innerHTML = "Show less";
+	}
+  }
+  </script>
+  
+  <style>
+  #show-more-content {
+	height: 5em;
+	overflow: hidden;
+  }
+  
+  #show-more-toggle {
+	cursor: pointer;
+	color: gray;
+	text-decoration: underline;
+  }
+  
+  .show {
+	height: auto !important;
+	overflow: visible !important;
+  }
+  </style>
+  
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
